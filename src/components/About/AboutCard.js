@@ -8,29 +8,43 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Harsh Shukla </span>
-            from <span className="purple"> Ontario, Canada</span>
+            Hi Everyone, I am{" "}
+            <span className="purple">Dhruv Soni </span>
+            from <span className="purple">Toronto, Canada</span>
             <br />
-            I am currently in My Second year of Software Engineering at McMaster University.
+            I am currently pursuing a Bachelor of Engineering in{" "}
+            <span className="purple">Computer Engineering (Co-op)</span> at
+            York University.
             <br />
-            I have previously worked as a Software Developer Intern at <span className="purple">Site4U</span> 
+            <br />
+            I am passionate about{" "}
+            <span className="purple">
+              embedded systems, robotics, hardware design, and
+              hardware-software integration.
+            </span>
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Through engineering projects and student teams, I have gained
+            hands-on experience with microcontrollers, sensors, PCB design,
+            embedded C++, and real-time systems.
+            <br />
+            <br />
+            Apart from engineering, some other activities that I enjoy!
           </p>
+
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Exploring new technologies
             </li>
+
             <li className="about-activity">
-              <ImPointRight /> Motorsports
+              <ImPointRight /> Building personal projects
             </li>
+
             <li className="about-activity">
-              <ImPointRight /> Watching Movies
+              <ImPointRight /> Robotics and hands-on experimentation
             </li>
           </ul>
-
-       
         </blockquote>
       </Card.Body>
     </Card>
