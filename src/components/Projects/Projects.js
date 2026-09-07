@@ -1,117 +1,80 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import sevahub from "../../Assets/Projects/sevahub.png";
-import eduglow from "../../Assets/Projects/eduglow.png";
-import rigor from "../../Assets/Projects/rigor.png";
+
 import robotics from "../../Assets/Projects/robotics.webp";
 import personal from "../../Assets/Projects/personal.png";
-import ecohub from "../../Assets/Projects/ecohub.png";
-import cybersecurity from "../../Assets/Projects/cybersecurity.png";
-import memorylane from "../../Assets/Projects/MemoryLane.png";
-import badge from "../../Assets/Projects/badge.png";
+import sevahub from "../../Assets/Projects/sevahub.png";
+import rigor from "../../Assets/Projects/rigor.png";
+import eduglow from "../../Assets/Projects/eduglow.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
+
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
+
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-          <ProjectCard
-              imgPath={badge}
-              isBlog={false}
-              title="Badge"
-              description="Badge is a web-based professional networking platform designed for hackathons, conferences, and career fairs. It uses AI-powered identity extraction, vector embeddings, and 3D visualization to help attendees make meaningful connections based on professional compatibility rather than superficial metrics."
-              ghLink="https://github.com/RajanChavada/Badge"
-              demoLink="https://devpost.com/software/badge"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-          <ProjectCard
-              imgPath={ecohub}
-              isBlog={false}
-              title="EcoHub"
-              description="EcoHub provides eco-friendly activities and rewards users with EcoCoins for their participation and positive environmental impact."
-              ghLink="https://github.com/Harsh-Is-Coding/terrahacks"
-              demoLink="https://devpost.com/software/ecohub-ry6n8o"
-            />
-          </Col>
-          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={memorylane}
+              imgPath={robotics}
               isBlog={false}
-              title="Memory Lane"
-              description="Memory Lane is a user-friendly web application designed to help individuals with memory impairments by recognizing and identifying faces. It serves as a virtual assistant to connect users with their loved ones effortlessly."
-              demoLink="https://devpost.com/software/memory-lane-dhke7c?ref_content=user-portfolio&ref_feature=in_progress"
-              ghLink="https://github.com/PakmanGames/deltahacks11"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={sevahub}
-              isBlog={false}
-              title="SevaHub"
-              description="Seva Hub focuses on providing volunteering access to more people and connecting coordinators and volunteers with each other"
-              ghLink="https://devpost.com/software/seva-hub"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={eduglow}
-              isBlog={false}
-              title="EduGlow"
-              description="EduGlow is an innovative platform that transforms text prompts into interactive Google Slides and flashcards"
-              ghLink="https://github.com/tsangh5/EduGlow"
-              demoLink="https://devpost.com/software/eduglow"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={rigor}
-              isBlog={false}
-              title="Rigor"
-              description="Track your calories, get custom workout plans, and view progress. Rigor is the all-in-one fitness application that you need to achieve your dream self"
-              ghLink="https://github.com/SachinVedGupta/Rigor"
-              demoLink="https://sachinvedgupta.github.io/Rigor/index.html"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={cybersecurity}
-              isBlog={false}
-              title="CyberSecure System"
-              description="A cutting-edge cybersecurity system featuring facial recognition login, a secure password manager, and encrypted file sharing to ensure privacy and data protection."
-              ghLink="https://www.linkedin.com/posts/harsh-shukla-2005hs_engineeringexcellence-cybersecurityinnovation-activity-7264444646985027584-Mh1v?utm_source=share&utm_medium=member_desktop"
+              title="Autonomous Sumobot Robot"
+              description="Developed an autonomous Sumobot using C++ and Arduino with ultrasonic and infrared sensor fusion for real-time opponent and edge detection. Optimized motor control and timing logic to reduce response latency from 120ms to 70ms and improved competition win-rate by 35%."
+              ghLink="https://github.com/sonidhruv1272"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={robotics}
-              isBlog={false}
-              title="Vex Robotics"
-              description="Developed a Vex Robotics robot which included a automous mode and a driver controlled mode"
-              ghLink="https://github.com/JayPrograms/Robot-Routing-Program"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={personal}
               isBlog={false}
-              title="Personal Website"
-              description="This is my personal website that I created using React"
-              ghLink="https://github.com/Harsh-Is-Coding/portfolio"
+              title="Smart Doorbell System"
+              description="Built a smart doorbell system using an ESP32-CAM, Arduino, Wi-Fi, and Blynk IoT. Implemented embedded C++ firmware for event detection and cloud synchronization with remote monitoring and notifications."
+              ghLink="https://github.com/sonidhruv1272"
             />
           </Col>
-          
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sevahub}
+              isBlog={false}
+              title="Fingerprint Door Lock System"
+              description="Designed an Arduino-based fingerprint authentication system using a fingerprint sensor and servo-controlled locking mechanism. Implemented fingerprint enrollment, matching, and input validation in embedded C++."
+              ghLink="https://github.com/sonidhruv1272"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rigor}
+              isBlog={false}
+              title="PCB Design Project"
+              description="Designed and simulated a multi-layer PCB with a focus on efficient routing, component placement, circuit reliability, and noise reduction. Used simulation to identify potential issues before fabrication."
+              ghLink="https://github.com/sonidhruv1272"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={eduglow}
+              isBlog={false}
+              title="Personal Portfolio Website"
+              description="Developed a responsive personal portfolio website using React and Bootstrap to showcase my engineering projects, technical skills, education, and experience. The website is hosted using GitHub Pages."
+              ghLink="https://github.com/sonidhruv1272/Dhruv-Personal-Portfolio-Website"
+              demoLink="https://sonidhruv1272.github.io/Dhruv-Personal-Portfolio-Website/"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
